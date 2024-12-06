@@ -1,0 +1,162 @@
+/*
+ * @author ARUNKUMAR
+ */
+import java.util.Scanner;
+public class RestaurantOrderSystem {
+    public static void main (String ags[]){
+    Scanner scan = new Scanner(System.in);
+    
+    System.out.println("Welcome to XXX Restaurant");
+    System.out.println("                          ");
+    System.out.println("Happy Diwaly!");
+    System.out.println("                          ");
+    System.out.println(" Today, We have a offer for diwaly. So, every item has some discount. Place your order and Enjoy the offers!. ");
+    System.out.println("                          ");
+    System.out.println("Restaurant menu items :");
+    System.out.println(" 1. Burger");
+    System.out.println(" 2. Pizza");
+    System.out.println(" 3. Cheese Pasta");
+    System.out.println(" 4. Salad");
+    System.out.println(" 5. Steak");
+    System.out.println(" 6. Shezwan Chicken");
+    System.out.println(" 7. Desserts");
+    System.out.println(" 8. Mujito");
+    System.out.println(" 9. Dragon Chicken");
+    System.out.println(" 0. Finish your order");
+    
+    System.out.println("Enter the number of the item,If you want you order ");
+    
+    double total = 0;
+    for(int i=0; i<10 ; i++){
+        System.out.print("Enter the number, for item : ");
+        int item = scan.nextInt();
+        if(item == 0){
+            System.out.println("Order completed. Thank you for visiting!");
+            break;
+        }
+        //item 1 checking
+        else if(item == 1){
+            System.out.println("Burger, price is $200");
+            System.out.println("Discount 20%");
+            int price = 200;
+            int discount = 20;
+            int cal = (price/100)*discount;
+            System.out.println("Burger,Discount amount is :" + cal);
+            int result = price - cal;
+            System.out.println("Burger, Offer price is : "+ result);
+            total += result ;
+            System.out.println("Burger, is added your order");
+        }
+        //item 2 checking
+        else if(item == 2){
+            System.out.println("Pizza, price is $400");
+            System.out.println("Discount 25%");
+            int price = 400;
+            int discount = 25;
+            int cal = (price/100)*discount;
+            System.out.println("Pizza, Discount amount is : " + cal);
+            int result = price - cal;
+            System.out.println("Pizza, Offer price is : "+ result);
+            total += result ;
+            System.out.println("Pizza, is added your order");
+        }
+        //item 3 checking
+        else if(item == 3){
+            System.out.println("Cheese Pasta, price is $229");
+            System.out.println("Discount 20%");
+            int price = 229;
+            int discount = 20;
+            int cal = (price/100)*discount;
+            System.out.println("Cheese Pizza, Discount amount is : " + cal);
+            int result = price - cal;
+            System.out.println("Cheese Pizza, Offer price is : "+ result);
+            total += result ;
+            System.out.println("Cheese Pizza, is added your order");
+        }
+        //item 4 checking
+        else if(item == 4){
+            System.out.println("Salad, price is $250");
+            System.out.println("Discount 20%");
+            int price = 250;
+            int discount = 20;
+            int cal = (price/100)*discount;
+            System.out.println("Salad, Discount amount is : " + cal);
+            int result = price - cal;
+            System.out.println("Salad, Offer price is : "+ result);
+            total += result ;
+            System.out.println("Salad, is added your order");
+        }
+        //item 5 checking
+        else if(item == 5){
+            System.out.println("Steak, price is $600");
+            System.out.println("Discount 15%");
+            int price = 600;
+            int discount = 15;
+            int cal = (price/100)*discount;
+            System.out.println("Steak, Discount amount is : " + cal);
+            int result = price - cal;
+            System.out.println("Steak, Offer price is : "+ result);
+            total += result ;
+            System.out.println("Steak, is added your order");
+        }
+        //item 6 checking
+        else if(item == 6){
+            System.out.println("Shezwan Chicken, price is $500");
+            System.out.println("Discount 35%");
+            int price = 500;
+            int discount = 35;
+            int cal = (price/100)*discount;
+            System.out.println("Shezwan Chicken, Discount amount is : " + cal);
+            int result = price - cal;
+            System.out.println("Shezwan Chicken, Offer price is : "+ result);
+            total += result ;
+            System.out.println("Shezwan Chicken, is added your order");
+        }
+        //item 7 checking
+        else if(item == 7){
+            System.out.println("Desserts, price is $200");
+            System.out.println("Discount 15%");
+            int price = 200;
+            int discount = 15;
+            int cal = (price/100)*discount;
+            System.out.println("Desserts, Discount amount is : " + cal);
+            int result = price - cal;
+            System.out.println("Desserts, Offer price is : "+ result);
+            total += result ;
+            System.out.println("Desserts, is added your order");
+        }
+        //item 8 checking
+        else if(item == 8){
+            System.out.println("Mujito, price is $200");
+            System.out.println("Discount 10%");
+            int price = 200;
+            int discount = 10;
+            int cal = (price/100)*discount;
+            System.out.println("Mujito, Discount amount is : " + cal);
+            int result = price - cal;
+            System.out.println("Mujito, Offer price is : "+ result);
+            total += result ;
+            System.out.println("Mujito, is added your order");
+        }
+        //item 9 checking
+        else if(item == 9){
+            System.out.println("Dragon Chicken, price is $350");
+            System.out.println("Discount 25%");
+            int price = 350;
+            int discount = 25;
+            int cal = (price/100)*discount;
+            System.out.println("Dragon Chicken, Discount amount is : " + cal);
+            int result = price - cal;
+            System.out.println("Dragon Chicken, Offer price is : "+ result);
+            total += result ;
+            System.out.println("Dragon Chicken, is added your order");
+        }
+        else{
+            System.out.println("Items of number available in maximum 9. So, Enter your item number 0 to 9");
+        }
+        System.out.println("What is your next order ");
+          
+    }
+    System.out.print("Your total amount :$"+ total);
+    }   
+}
