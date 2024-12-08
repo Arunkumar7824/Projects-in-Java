@@ -1,0 +1,29 @@
+/**
+ *
+ * @author ARUNKUMAR
+ */
+import java.util.Scanner;
+public class StudentAgeVerification {
+    public static void main(String args[]){
+        Scanner scan = new Scanner(System.in);
+        
+        System.out.println("-- Student Age Verification --");
+        int total_Student_num = 6 ;
+     
+        for (int i=1;i <= total_Student_num;++i){
+           System.out.print("Enter age for student ID "+i+" : ");
+           int age =scan.nextInt();
+           
+           if(18<=age && age<=65 ){
+               System.out.println("Student ID "+ i +" is "+ age +" years old.");
+           }
+           else{
+               System.out.println("Invalid age entered. Age must be between (18 to 65).Skipping to the next student.");
+               continue;
+           }
+        }
+        System.out.print("Students are successfully verified.");
+        
+    }
+    
+}
